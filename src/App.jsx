@@ -1,4 +1,4 @@
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "./App.css";
 import Dropdown from './Dropdown';
@@ -119,6 +119,8 @@ function App() {
       <strong>Developer Tools</strong>: Git, Bash, Visual Studio, Robot Mesh Studio<br />
       <strong>Frameworks</strong>: React.js, Node.js, Pandas, Matplotlib, Scikit-learn
       </p>
+
+      <Analytics />
     </>
   );
 }
