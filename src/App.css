@@ -65,3 +65,38 @@
   padding-left: 1.2rem;
   margin-top: 0.5rem;
 }
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icons a {
+  color: white;
+  transition: transform 0.2s ease;
+  align-items: flex-end;
+}
+
+.icons a:hover {
+  transform: scale(1.2);
+}
+
+.linkedin-icon:hover {
+  color: #0077b5;
+}
+
+.github-icon:hover {
+  color: white;
+}

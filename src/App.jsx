@@ -9,27 +9,28 @@ function App() {
 
   return (
     <>
-      <div className="iconContainer">
-        <a
-          href={linkedin}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="icon linkedin"
-        >
-          <FaLinkedin size={28} />
-        </a>
-        <a
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="icon github"
-        >
-          <FaGithub size={28} />
-        </a>
+      <div className="header">
+        <h1>Kent Lim</h1>
+        <div className="icons">
+          <a
+            href={linkedin}
+            className="linkedin-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin size={24} />
+          </a>
+          <a
+            href={github}
+            className="github-icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub size={24} />
+          </a>
+        </div>
       </div>
-
-      <h1>Kent Lim</h1>
-
+      
       <h2>About</h2>
       <p>Hello! I am a second year Computer Science major at UC Santa Barbara interested in software and web development. I was born and raised in the Philippines (kamusta po!) and
         moved to the United States in 2015.
@@ -50,7 +51,7 @@ function App() {
       <h2>Experience</h2>
       <Dropdown
         title="AI Data Trainer @ DataAnnotation"
-        desc="May 2025 --"
+        desc="May 2025 -- Present"
         bullets={[
           "Completed 100+ tasks related to data labeling and model evaluation to train machine learning models and natural language processing (NLP) systems.",
           "Annotated various outputs of machine learning models, ensuring that model outputs are accurate and adhere to certain criteria.",
