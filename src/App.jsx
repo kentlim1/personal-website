@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next"
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "./App.css";
 import Dropdown from './Dropdown';
