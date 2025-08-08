@@ -62,7 +62,7 @@ function App() {
       />
       <br />
       <Dropdown
-        title="Robotics Club Team Captain @ Newport Harbor High School"
+        title="Robotics Club Team Member @ Newport Harbor High School"
         desc="Sep. 2023 -- May 2024"
         bullets={[
           "Worked on a VEX V5 robot throughout the year, adhering to 2024 competition rules.",
