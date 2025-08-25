@@ -52,7 +52,7 @@ function App() {
       <h2>Experience</h2>
       <Dropdown
         title="AI Data Trainer @ DataAnnotation"
-        desc="May 2025 -- Present"
+        desc="May 2025 -- Aug. 2025"
         bullets={[
           "Completed 100+ tasks related to data labeling and model evaluation to train machine learning models and natural language processing (NLP) systems.",
           "Annotated various outputs of machine learning models, ensuring that model outputs are accurate and adhere to certain criteria.",
@@ -82,30 +82,32 @@ function App() {
           "Fostered a sense of belonging in my group, creating several handwritten letters to each student every month to check in on them."
       ]}
       />
-      <br />
-      <Dropdown
-        title="Code It, Make It, Build It Club Member @ Newport Harbor High School"
-        desc="Aug. 2022 -- June 2024"
-        bullets={[
-          "Maintained the school’s culinary website with 100+ website visitors every year.",
-          "Published 2 new website pages to enhance site functionality and user experience.",
-          "Partnered with the school’s Culinary Department Chair to understand requirements and ensure delivery met expectations.",
-      ]}
-      />
 
       <h2>Projects</h2>
+      <Dropdown
+        title="Formula 1 Driver Profiles"
+        desc="TypeScript, React.js, Recharts, Tailwind CSS, HTML, Git"
+        bullets={[
+          "Created a website showcasing F1 driver profiles in order of championship standings, styled with Tailwind CSS.",
+          "Displayed driver statistics, such as finishing race positions and championship points progression, using Recharts.",
+          "Queried updated data (names, constructors, championship points, etc.) from the Jolpica F1 API",
+      ]}
+        github = "https://github.com/kentlim1/f1-driver-profiles"
+      />
+      <br />
       <Dropdown
         title="Personal Website (this website!)"
         desc="React.js, HTML/CSS, Git"
         bullets={[
           "Created a personal website displaying my information, contact, resume, and activities.",
-          "Gained experience in developing and managing a codebase, working with React.js, and deploying successful progress onto GitHub."
+          "Gained experience in developing and managing a codebase, working with React.js, and deploying successful progress onto GitHub.",
       ]}
+        github = "https://github.com/kentlim1/personal-website"
       />
       <br />
       <Dropdown
         title="Alzheimer's Disease Predictor Model"
-        desc="Python, Git"
+        desc="Pandas, Matplotlib, Scikit-learn"
         bullets={[
           "Developed a model to predict Alzheimer’s disease based on lifestyle decisions for the 2025 UCSB Datathon.",
           "Collaborated with a group to perform data cleaning, exploratory data analysis, and model training.",
@@ -115,9 +117,10 @@ function App() {
 
       <h2>Skills</h2>
       <p>
-      <strong>Languages</strong>: C++, Java, Python, JavaScript, HTML/CSS<br />
-      <strong>Developer Tools</strong>: Git, Bash, Visual Studio, Robot Mesh Studio<br />
-      <strong>Frameworks</strong>: React.js, Node.js, Pandas, Matplotlib, Scikit-learn
+      <strong>Languages</strong>: C++, Java, Python, TypeScript, JavaScript, HTML/CSS<br />
+      <strong>Developer Tools</strong>: Git, Bash, Visual Studio Code, Robot Mesh Studio<br />
+      <strong>Frameworks</strong>: React.js, Node.js, Tailwind, Recharts<br />
+      <strong>Libraries</strong>: Pandas, Matplotlib, Scikit-learn
       </p>
 
       <Analytics />
