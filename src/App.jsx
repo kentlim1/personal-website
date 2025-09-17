@@ -5,7 +5,7 @@ import Dropdown from './Dropdown';
 
 
 function App() {
-  const linkedin = "https://www.linkedin.com/in/kent-lim-8542a6344/";
+  const linkedin = "https://www.linkedin.com/in/k3ntlim";
   const github = "https://github.com/kentlim1";
 
   return (
@@ -55,9 +55,8 @@ function App() {
         desc="May 2025 -- Aug. 2025"
         bullets={[
           "Completed 100+ tasks related to data labeling and model evaluation to train machine learning models and natural language processing (NLP) systems.",
-          "Annotated various outputs of machine learning models, ensuring that model outputs are accurate and adhere to certain criteria.",
-          "Utilized various programming languages (Python, C++, JavaScript) to validesc data and improve machine learning model outputs.",
-          "Gained hands-on exposure to the process of machine learning, such as data cleaning, supervised learning, and prompt engineering."
+          "Evaluated and validated machine learning outputs using C++, Python, and JavaScript to ensure accuracy, consistency, and improved model performance.",
+          "Developed practical knowledge in data cleaning, supervised learning, and prompt engineering through hands-on machine learning projects."
       ]}
       />
       <br />
