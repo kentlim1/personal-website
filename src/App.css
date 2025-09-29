@@ -108,7 +108,7 @@
 /* Typing keyframes */
 @keyframes typing {
   from { width: 0; }
-  to { width: 7ch; } /* 8 characters = "Kent Lim" */
+  to { width: 8ch; } /* 8 characters = "Kent Lim" */
 }
 
 /* Remove cursor after typing */
