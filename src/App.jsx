@@ -154,7 +154,7 @@ function App() {
           <h2>Skills</h2>
           <p>
             <strong>Languages</strong>: C++, Java, Python, TypeScript, JavaScript,
-            HTML/CSS
+            SQL, HTML/CSS
             <br />
             <strong>Developer Tools</strong>: Git, Bash, Visual Studio Code, Robot
             Mesh Studio
