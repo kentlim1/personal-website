@@ -5,19 +5,7 @@
   text-align: left;
 }
 
-.iconContainer {
-  position: absolute;
-  top: 70px;
-  right: 1100px;
-  display: flex;
-  gap: 12px;
-}
-
-.icon {
-  color: #ffffff;
-  text-decoration: none;
-}
-
+/* ===== Dropdown Styles ===== */
 .dropdown-header {
   cursor: pointer;
   display: flex;
@@ -28,7 +16,7 @@
 .dropdown-icon {
   transition: transform 0.3s ease;
   font-size: 1rem;
-  color: #bbb;
+  color: white;
 }
 
 .dropdown-icon.rotate {
@@ -64,40 +52,66 @@
   gap: 20px;
 }
 
-
-.github-icon {
-  font-size: 1.4rem;
+.dropdown-actions a svg {
   color: white;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.dropdown-actions a:hover svg {
+  transform: scale(1.1);
 }
 
 
-.header {
+/* ===== Icons ===== */
+.social-nav {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   gap: 12px;
+  margin-top: 0.75rem;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 2rem;
+.social-nav a svg {
+  font-size: 1.8rem;
   color: white;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
-.icons {
-  display: flex;
-  gap: 10px;
-}
-
-.icons a {
-  color: white;
-  transition: transform 0.2s ease;
-  align-items: flex-end;
-}
-
-.icons a:hover {
+.social-nav a:hover svg {
   transform: scale(1.2);
 }
 
-.linkedin-icon:hover {
+.linkedin-icon:hover svg {
   color: #0077b5;
+}
+
+.github-icon:hover svg {
+  color: #b0b0b0;
+}
+
+/* ==== Animations ==== */
+.typing {
+  display: inline-block;
+  margin: 0 auto;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid var(--color-primary);
+  width: 0;
+  animation: 
+    typing 1s steps(8, end) 2s forwards,  /* 1s delay */
+    remove-cursor 0.5s 4s forwards;
+}
+
+/* Typing keyframes */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 7ch; } /* 8 characters = "Kent Lim" */
+}
+
+/* Remove cursor after typing */
+@keyframes remove-cursor {
+  to { border-right: none; }
 }
