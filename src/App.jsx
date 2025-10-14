@@ -117,7 +117,7 @@ function App() {
         <section id="projects">
           <h2>Projects</h2>
           <Dropdown
-            title="Formula 1 Driver Profiles"
+            title="Formula 1 Driver Statistics"
             desc="TypeScript, React.js, Recharts, Tailwind CSS, HTML, Git"
             bullets={[
               "Created a website showcasing F1 driver profiles in order of championship standings, styled with Tailwind CSS.",
@@ -156,7 +156,7 @@ function App() {
             <strong>Languages</strong>: C++, Java, Python, TypeScript, JavaScript,
             SQL, HTML/CSS
             <br />
-            <strong>Developer Tools</strong>: Git, Bash, Visual Studio Code, Robot
+            <strong>Developer Tools</strong>: Git, Bash, Visual Studio Code, Vercel, Robot
             Mesh Studio
             <br />
             <strong>Frameworks</strong>: React.js, Node.js, Tailwind, Recharts
