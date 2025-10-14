@@ -64,15 +64,22 @@ function App() {
         <section id="education">
           <h2>Education</h2>
           <article>
-            <strong>University of California, Santa Barbara</strong>
-            <br />
-            B.S. in Computer Science &nbsp; | &nbsp; Sep. 2024 - June 2028
+          <Dropdown
+            title="University of California, Santa Barbara"
+            desc="B.S. in Computer Science | Sep 2024 -- June 2028"
+            bullets={[
+              "GPA: 3.76/4.0 | Dean’s Honors (2024–2025)",
+              "Relevant Coursework: Object Oriented Programming, Data Structures and Algorithms, Linear Algebra, Discrete Math, Probability and Statistics, \
+              Differential Equations",
+              "Activities: Association for Computing Machinery (ACM) member"
+            ]}
+          />
           </article>
           <br />
           <article>
             <strong>Newport Harbor High School</strong>
             <br />
-            Aug. 2020 - June 2024
+            Aug 2020 -- June 2024
           </article>
           <br />
         </section>
@@ -82,32 +89,30 @@ function App() {
           <h2>Experience</h2>
           <Dropdown
             title="AI Data Trainer @ DataAnnotation"
-            desc="May 2025 - Aug. 2025"
+            desc="May 2025 -- Aug 2025"
             bullets={[
-              "Completed 100+ tasks related to data labeling and model evaluation to train machine learning models and natural language processing (NLP) systems.",
+              "Labeled and validated 100+ datasets to train machine learning models and natural language processing systems.",
               "Evaluated and validated machine learning outputs using C++, Python, and JavaScript to ensure accuracy, consistency, and improved model performance.",
               "Developed practical knowledge in data cleaning, supervised learning, and prompt engineering through hands-on machine learning projects.",
             ]}
           />
           <br />
           <Dropdown
-            title="Robotics Club Team Member @ Newport Harbor High School"
-            desc="Sep. 2023 - May 2024"
+            title="Lead Systems Engineer @ VEX Robotics Team"
+            desc="Sep 2023 -- May 2024"
             bullets={[
-              "Worked on a VEX V5 robot throughout the year, adhering to 2024 competition rules.",
-              "Participated in the 2024 NMUSD VEX Robotics Over Under Competition, representing our high school.",
-              "Achieved 2nd place out of 14 participating teams, taking home a runner-up trophy.",
-              "Designed and programmed the robot’s tri-ball collector mechanism using Python.",
+              "Engineered on a VEX V5 robot throughout the year, engaging in bi-weekly team meetings and participating in practice scrimmages against other teams.",
+              "Competed in the 2024 NMUSD VEX Robotics Over Under Competition, achieving 2nd place out of 14 participating teams.",
+              "Designed and programmed the robot’s scoring system using Python, scoring 100+ points for our team and played a pivotal role in achieving 2nd place."
             ]}
           />
           <br />
           <Dropdown
             title="Link Crew Leader @ Newport Harbor High School"
-            desc="Aug. 2022 - June 2024"
+            desc="Aug 2022 -- June 2024"
             bullets={[
-              "Introduced a group of 10 new students to the high school, giving them a tour of the school on orientation day.",
-              "Mentored the group throughout the school year, acting as a point of contact for school-related questions.",
-              "Fostered a sense of belonging in my group, creating several handwritten letters to each student every month to check in on them.",
+              "Mentored 10 freshmen annually through orientation and engagement activities, promoting academic and social success.",
+              "Fostered a sense of belonging by writing monthly letters of encouragement to each student in my group."
             ]}
           />
           <br />
@@ -120,9 +125,9 @@ function App() {
             title="Formula 1 Driver Statistics"
             desc="TypeScript, React.js, Recharts, Tailwind CSS, HTML, Git"
             bullets={[
-              "Created a website showcasing F1 driver profiles in order of championship standings, styled with Tailwind CSS.",
-              "Displayed driver statistics using Recharts.",
-              "Queried updated data from the Jolpica F1 API.",
+              "Developed a dynamic Formula 1 statistics dashboard integrating live API data and interactive visualizations.",
+              "Designed and implemented interactive line charts to display driver performance metrics, including race finishes and championship points progression, using Recharts.",
+              "Fetched and parsed real-time data from the Jolpica Formula 1 API and styled the interface with Tailwind CSS for a responsive user experience.",
             ]}
             github="https://github.com/kentlim1/f1-driver-profiles"
           />
@@ -131,8 +136,8 @@ function App() {
             title="Personal Website (this website!)"
             desc="React.js, HTML/CSS, Git"
             bullets={[
-              "Created a personal website displaying my information, contact, resume, and activities.",
-              "Gained experience in developing and managing a codebase and deploying on GitHub.",
+              "Built and deployed a personal portfolio site using React.js and Vercel to showcase projects and experience.",
+              "Strengthened skills in React.js development, codebase management, and GitHub deployment through iterative project work.",
             ]}
             github="https://github.com/kentlim1/personal-website"
           />
@@ -142,8 +147,8 @@ function App() {
             desc="Python, Pandas, Matplotlib, Scikit-learn"
             bullets={[
               "Developed a model to predict Alzheimer’s disease based on lifestyle decisions for the 2025 UCSB Datathon.",
-              "Performed data cleaning, exploratory analysis, and model training.",
-              "Utilized a random forest model, achieving 80% accuracy.",
+              "Collaborated with a team of 4 to preprocess data, perform exploratory data analysis, and train predictive models.",
+              "Implemented and fine-tuned a Random Forest classifier, achieving 85% accuracy on Alzheimer’s disease prediction using a Kaggle dataset.",
             ]}
           />
           <br />
