@@ -108,6 +108,16 @@ function App() {
           />
           <br />
           <Dropdown
+            title="Frontend Web Developer @ NHHS Culinary Department"
+            desc="Oct 2023 -- May 2024"
+            bullets={[
+              "Maintained the website frontend using React.js, implementing two new pages and connecting them to the navigation bar.",
+              "Integrated and embedded Google Docs into the website and improved user navigation for better accessibility.",
+              "Collaborated with the head of culinary to align site design and content with department goals."
+            ]}
+          />
+          <br />
+          <Dropdown
             title="Link Crew Leader @ Newport Harbor High School"
             desc="Aug 2022 -- June 2024"
             bullets={[
