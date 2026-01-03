@@ -68,7 +68,7 @@ function App() {
             title="University of California, Santa Barbara"
             desc="B.S. in Computer Science | Sep 2024 -- June 2028"
             bullets={[
-              "GPA: 3.76/4.0 | Dean’s Honors (2024–2025)",
+              "GPA: 3.72/4.0 | Dean’s Honors (2024–2025)",
               "Relevant Coursework: Object Oriented Programming, Data Structures and Algorithms, Linear Algebra, Discrete Math, Probability and Statistics, \
               Differential Equations",
               "Activities: Association for Computing Machinery (ACM) member"
@@ -133,11 +133,11 @@ function App() {
           <h2>Projects</h2>
           <Dropdown
             title="Formula 1 Driver Statistics"
-            desc="TypeScript, React.js, Recharts, Tailwind CSS, HTML, Git"
+            desc="TypeScript, React.js, Supabase, PostgreSQL, Tailwind CSS"
             bullets={[
               "Developed a dynamic Formula 1 statistics dashboard integrating live API data and interactive visualizations.",
               "Designed and implemented interactive line charts to display driver performance metrics, including race finishes and championship points progression, using Recharts.",
-              "Fetched and parsed real-time data from the Jolpica Formula 1 API and styled the interface with Tailwind CSS for a responsive user experience.",
+              "Integrated Supabase Auth with Google OAuth and PostgreSQL, designing a profiles layer with unique usernames and secure access controls.",
             ]}
             github="https://github.com/kentlim1/f1-driver-profiles"
           />
@@ -168,11 +168,9 @@ function App() {
         <section id="skills">
           <h2>Skills</h2>
           <p>
-            <strong>Languages</strong>: C++, Java, Python, TypeScript, JavaScript,
-            SQL, HTML/CSS
+            <strong>Languages</strong>: C++, Java, Python, JavaScript, TypeScript, SQL (Postgres), HTML/CSS
             <br />
-            <strong>Developer Tools</strong>: Git, Bash, Visual Studio Code, Vercel, Robot
-            Mesh Studio
+            <strong>Developer Tools</strong>: Git, Bash, Visual Studio Code, Vercel, Supabase, Robot Mesh Studio
             <br />
             <strong>Frameworks</strong>: React.js, Node.js, Tailwind, Recharts
             <br />
