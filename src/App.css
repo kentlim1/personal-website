@@ -16,7 +16,7 @@
 .dropdown-icon {
   transition: transform 0.3s ease;
   font-size: 1rem;
-  color: white;
+  color: var(--color-text);
 }
 
 .dropdown-icon.rotate {
@@ -24,7 +24,7 @@
 }
 
 .dropdown-desc {
-  color: #fff;
+  color: var(--color-text);
   font-size: 1rem;
   margin-top: 0.2rem;
 }
@@ -53,7 +53,7 @@
 }
 
 .dropdown-actions a svg {
-  color: white;
+  color: var(--color-text);
   transition: color 0.2s ease, transform 0.2s ease;
 }
 
@@ -73,7 +73,7 @@
 
 .social-nav a svg {
   font-size: 1.8rem;
-  color: white;
+  color: var(--color-text);
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
