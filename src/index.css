@@ -1,149 +1,59 @@
-/* Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
-  --color-primary: #646cff;
-  --color-primary-gradient: linear-gradient(120deg, #3c5dee, #41d1ff);
-  --color-bg: #0f0f0f;
-  --color-bg-gradient: radial-gradient(circle at 50% 0%, #2a2a2a, #0f0f0f);
-  --color-text: rgba(255, 255, 255, 0.95);
-  --color-card: rgba(255, 255, 255, 0.03);
-  --radius: 16px;
-  --max-width: 800px;
+  --bg: #0b0b0b;
+  --surface: #111111;
+  --surface2: #161616;
+  --border: #232323;
+  --border2: #2e2e2e;
+  --text: #dedad2;
+  --text-dim: #888880;
+  --text-dimmer: #444440;
+  --accent: #38bfff;
+  --accent-dim: rgba(56, 191, 255, 0.12);
+  --accent-glow: rgba(56, 191, 255, 0.08);
+  --mono: 'JetBrains Mono', monospace;
+  --sans: 'Plus Jakarta Sans', sans-serif;
 
-  font-family: "Inter", system-ui, sans-serif;
+  font-family: var(--sans);
   line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: var(--color-text);
-  background-color: var(--color-bg);
-
+  color-scheme: dark;
+  color: var(--text);
+  background-color: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-
-.inter {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Layout*/
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  min-width: 320px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
   min-height: 100vh;
-  background: var(--color-bg-gradient);
-  color: var(--color-text);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  animation: fadeIn 0.8s ease-in-out;
+  overflow-x: hidden;
 }
 
-header,
-footer {
-  text-align: center;
-  margin: 2rem;
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  background-size: 200px 200px;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.5;
 }
 
-section {
-  max-width: var(--max-width);
-  width: 100%;
-  margin: 1rem auto;
-  padding: 1rem 2rem;
-  background: var(--color-card);
-  border-radius: var(--radius);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-section:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
-  border-color: rgba(255, 255, 255, 0.15);
-}
-
-/* Headers */
-h1 {
-  font-size: 3rem;
-  line-height: 1;
-  text-align: center;
-  margin-bottom: 1rem;
-  background: var(--color-primary-gradient);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 0.75rem;
-  border-bottom: 2px solid var(--color-primary);
-  display: inline-block;
-}
-
-/* Interaction */
-a,
-button {
-  cursor: pointer;
-  transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
-}
-
-a:hover,
-button:hover {
-  color: var(--color-primary);
-  transform: translateY(-2px);
-}
-
-a:focus-visible,
-button:focus-visible {
-  outline: 2px dashed var(--color-primary);
-  outline-offset: 4px;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-  body {
-    padding: 1rem;
-  }
-
-  h1 {
-    font-size: 2.2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  section {
-    padding: 1rem;
-  }
-}
-
-/* Animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+#root {
+  display: contents;
 }
